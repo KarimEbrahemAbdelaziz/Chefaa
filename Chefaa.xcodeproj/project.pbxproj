@@ -34,9 +34,13 @@
 		BC833FC62507FBD600A5E70F /* BrandItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FC52507FBD600A5E70F /* BrandItemViewModel.swift */; };
 		BC833FC82507FD0D00A5E70F /* BestSellingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FC72507FD0D00A5E70F /* BestSellingItemViewModel.swift */; };
 		BC833FCA2508224400A5E70F /* LandingPageItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FC92508224400A5E70F /* LandingPageItemViewModel.swift */; };
+		BC833FCC250826A200A5E70F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FCB250826A200A5E70F /* HomeViewController.swift */; };
+		BC833FCF250826C600A5E70F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FCE250826C600A5E70F /* Application.swift */; };
+		BC833FD12508278400A5E70F /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FD02508278400A5E70F /* HomeNavigator.swift */; };
+		BC833FD3250827C900A5E70F /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FD2250827C900A5E70F /* UIStoryboard+Extensions.swift */; };
+		BC833FD52508287B00A5E70F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833FD42508287B00A5E70F /* Reusable.swift */; };
 		BCB0DA3A25077A0200090CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB0DA3925077A0200090CD8 /* AppDelegate.swift */; };
 		BCB0DA3C25077A0200090CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB0DA3B25077A0200090CD8 /* SceneDelegate.swift */; };
-		BCB0DA3E25077A0200090CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB0DA3D25077A0200090CD8 /* ViewController.swift */; };
 		BCB0DA4125077A0200090CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0DA3F25077A0200090CD8 /* Main.storyboard */; };
 		BCB0DA4325077A0300090CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB0DA4225077A0300090CD8 /* Assets.xcassets */; };
 		BCB0DA4625077A0300090CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0DA4425077A0300090CD8 /* LaunchScreen.storyboard */; };
@@ -119,10 +123,14 @@
 		BC833FC52507FBD600A5E70F /* BrandItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemViewModel.swift; sourceTree = "<group>"; };
 		BC833FC72507FD0D00A5E70F /* BestSellingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellingItemViewModel.swift; sourceTree = "<group>"; };
 		BC833FC92508224400A5E70F /* LandingPageItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageItemViewModel.swift; sourceTree = "<group>"; };
+		BC833FCB250826A200A5E70F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BC833FCE250826C600A5E70F /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		BC833FD02508278400A5E70F /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		BC833FD2250827C900A5E70F /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		BC833FD42508287B00A5E70F /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		BCB0DA3625077A0200090CD8 /* Chefaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chefaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB0DA3925077A0200090CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB0DA3B25077A0200090CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCB0DA3D25077A0200090CD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCB0DA4025077A0200090CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB0DA4225077A0300090CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB0DA4525077A0300090CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -237,6 +245,8 @@
 			children = (
 				BC833FBE2507EFA400A5E70F /* ItemsViewModels */,
 				BC833FB42507EE7200A5E70F /* HomeViewModel.swift */,
+				BC833FCB250826A200A5E70F /* HomeViewController.swift */,
+				BC833FD02508278400A5E70F /* HomeNavigator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -255,6 +265,8 @@
 				BC833FBA2507EF1900A5E70F /* ActivityIndicator.swift */,
 				BC833FBC2507EF2F00A5E70F /* ErrorTracker.swift */,
 				BC833FC12507F04A00A5E70F /* Observable+Extensions.swift */,
+				BC833FD2250827C900A5E70F /* UIStoryboard+Extensions.swift */,
+				BC833FD42508287B00A5E70F /* Reusable.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -269,6 +281,16 @@
 				BC833FC92508224400A5E70F /* LandingPageItemViewModel.swift */,
 			);
 			path = ItemsViewModels;
+			sourceTree = "<group>";
+		};
+		BC833FCD250826AD00A5E70F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC833FCE250826C600A5E70F /* Application.swift */,
+				BCB0DA3925077A0200090CD8 /* AppDelegate.swift */,
+				BCB0DA3B25077A0200090CD8 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		BCB0DA2D25077A0200090CD8 = {
@@ -296,12 +318,10 @@
 		BCB0DA3825077A0200090CD8 /* Chefaa */ = {
 			isa = PBXGroup;
 			children = (
-				BC833FB92507EEFF00A5E70F /* Utility */,
+				BC833FCD250826AD00A5E70F /* Application */,
 				BC833FB62507EE8100A5E70F /* Common */,
 				BC833FB22507EE6200A5E70F /* Scenes */,
-				BCB0DA3925077A0200090CD8 /* AppDelegate.swift */,
-				BCB0DA3B25077A0200090CD8 /* SceneDelegate.swift */,
-				BCB0DA3D25077A0200090CD8 /* ViewController.swift */,
+				BC833FB92507EEFF00A5E70F /* Utility */,
 				BCB0DA3F25077A0200090CD8 /* Main.storyboard */,
 				BCB0DA4225077A0300090CD8 /* Assets.xcassets */,
 				BCB0DA4425077A0300090CD8 /* LaunchScreen.storyboard */,
@@ -599,18 +619,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC833FCF250826C600A5E70F /* Application.swift in Sources */,
 				BC833FC82507FD0D00A5E70F /* BestSellingItemViewModel.swift in Sources */,
+				BC833FD12508278400A5E70F /* HomeNavigator.swift in Sources */,
 				BC833FC62507FBD600A5E70F /* BrandItemViewModel.swift in Sources */,
 				BC833FBD2507EF2F00A5E70F /* ErrorTracker.swift in Sources */,
-				BCB0DA3E25077A0200090CD8 /* ViewController.swift in Sources */,
 				BC833FCA2508224400A5E70F /* LandingPageItemViewModel.swift in Sources */,
+				BC833FCC250826A200A5E70F /* HomeViewController.swift in Sources */,
 				BC833FC02507EFBC00A5E70F /* SliderItemViewModel.swift in Sources */,
 				BCB0DA3A25077A0200090CD8 /* AppDelegate.swift in Sources */,
 				BC833FC42507FA5500A5E70F /* SubCategoryItemViewModel.swift in Sources */,
 				BCB0DA3C25077A0200090CD8 /* SceneDelegate.swift in Sources */,
+				BC833FD52508287B00A5E70F /* Reusable.swift in Sources */,
 				BC833FB82507EE8D00A5E70F /* ViewModelType.swift in Sources */,
 				BC833FBB2507EF1900A5E70F /* ActivityIndicator.swift in Sources */,
 				BC833FC22507F04A00A5E70F /* Observable+Extensions.swift in Sources */,
+				BC833FD3250827C900A5E70F /* UIStoryboard+Extensions.swift in Sources */,
 				BC833FB52507EE7200A5E70F /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

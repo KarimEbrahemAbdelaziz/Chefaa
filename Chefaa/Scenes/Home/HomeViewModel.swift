@@ -25,9 +25,11 @@ final class HomeViewModel: ViewModelType {
     }
     
     private let useCase: AdvertisementsUseCase
+    private let navigator: HomeNavigator
     
-    init(useCase: AdvertisementsUseCase) {
+    init(useCase: AdvertisementsUseCase, navigator: HomeNavigator) {
         self.useCase = useCase
+        self.navigator = navigator
     }
     
     func transform(input: Input) -> Output {
