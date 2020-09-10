@@ -14,11 +14,17 @@ def rx_alamofire
     pod 'RxAlamofire'
 end
 
+def ui
+  pod 'R.swift'
+  pod 'SkeletonView'
+end
+
 target 'Chefaa' do
   use_frameworks!
 
   rx_cocoa
   rx_swift
+  ui
 end
 
 target 'Domain' do
