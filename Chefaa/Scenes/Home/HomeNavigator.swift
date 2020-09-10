@@ -15,10 +15,15 @@ protocol HomeNavigator {
 }
 
 class DefaultHomeNavigator: HomeNavigator {
+    
+    // MARK: - Properties
+    
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider
 
+    // MARK: - Init
+    
     init(services: UseCaseProvider,
          navigationController: UINavigationController,
          storyBoard: UIStoryboard) {
@@ -26,6 +31,8 @@ class DefaultHomeNavigator: HomeNavigator {
         self.navigationController = navigationController
         self.storyBoard = storyBoard
     }
+    
+    // MARK: - HomeNavigator Functions
     
     func toHome() {
         let viewController = storyBoard.instantiateViewController(ofType: HomeViewController.self)

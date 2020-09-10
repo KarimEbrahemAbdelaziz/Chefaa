@@ -12,10 +12,10 @@ import Domain
 final class SliderItemViewModel   {
     
     let title: String
-    let image: String
+    let image: URL?
     
     init(with slider: SliderAdvertisement) {
         self.title = slider.title
-        self.image = "https://chefaa.com/\(slider.image)"
+        self.image = URL(string: "https://chefaa.com/\(slider.image)")
     }
 }

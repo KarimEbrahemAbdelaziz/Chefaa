@@ -12,15 +12,14 @@ import Domain
 final class BrandItemViewModel   {
     
     let title: String
-    let image: String
+    var image: URL?
     
     init(with brand: Brand) {
         self.title = brand.title
         guard let image = brand.images.first else {
-            self.image = ""
             return
         }
         
-        self.image = "https://chefaa.com/\(image)"
+        self.image = URL(string: "https://chefaa.com/\(image)")
     }
 }

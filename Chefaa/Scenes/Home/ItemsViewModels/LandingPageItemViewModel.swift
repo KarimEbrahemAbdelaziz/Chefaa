@@ -12,10 +12,10 @@ import Domain
 final class LandingPageItemViewModel   {
     
     let title: String
-    let image: String
+    let image: URL?
     
     init(with landingPage: LandingPage) {
         self.title = landingPage.name
-        self.image = landingPage.image
+        self.image = URL(string: "https://chefaa.com/\(landingPage.image)")
     }
 }

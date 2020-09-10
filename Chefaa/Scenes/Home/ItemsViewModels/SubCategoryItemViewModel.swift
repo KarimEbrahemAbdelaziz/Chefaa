@@ -12,10 +12,10 @@ import Domain
 final class SubCategoryItemViewModel   {
     
     let title: String
-    let image: String
+    let image: URL?
     
     init(with subCategory: SubCategory) {
         self.title = subCategory.title
-        self.image = "https://chefaa.com/\(subCategory.image)"
+        self.image = URL(string: "https://chefaa.com/\(subCategory.image)")
     }
 }

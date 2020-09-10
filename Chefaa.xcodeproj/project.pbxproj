@@ -11,6 +11,10 @@
 		9E48B4CB27D68945753CD9C8 /* Pods_Chefaa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0240A37DA8AB3448C1F13181 /* Pods_Chefaa.framework */; };
 		AEE82F3AA1DB04DE08BDAD3B /* Pods_NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCA6F32BA61B411AB0D2C5B /* Pods_NetworkPlatform.framework */; };
 		BC7D8590250A07D7000D2E14 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D858F250A07D7000D2E14 /* R.generated.swift */; };
+		BC7D8597250A1E83000D2E14 /* NewOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D8595250A1E83000D2E14 /* NewOfferCollectionViewCell.swift */; };
+		BC7D8598250A1E83000D2E14 /* NewOfferCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7D8596250A1E83000D2E14 /* NewOfferCollectionViewCell.xib */; };
+		BC7D859C250A2286000D2E14 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D859A250A2286000D2E14 /* CategoryCollectionViewCell.swift */; };
+		BC7D859D250A2286000D2E14 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7D859B250A2286000D2E14 /* CategoryCollectionViewCell.xib */; };
 		BC833F8E2507C77300A5E70F /* AdvertisementsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833F8D2507C77300A5E70F /* AdvertisementsUseCase.swift */; };
 		BC833F902507C9C800A5E70F /* SliderAdvertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833F8F2507C9C800A5E70F /* SliderAdvertisement.swift */; };
 		BC833F922507CA2A00A5E70F /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC833F912507CA2A00A5E70F /* SubCategory.swift */; };
@@ -102,6 +106,10 @@
 		AD11F7B535E759FB6DA16A23 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4EC6CAC8C5F3CF376FD2FB /* Pods-Chefaa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chefaa.release.xcconfig"; path = "Target Support Files/Pods-Chefaa/Pods-Chefaa.release.xcconfig"; sourceTree = "<group>"; };
 		BC7D858F250A07D7000D2E14 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		BC7D8595250A1E83000D2E14 /* NewOfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC7D8596250A1E83000D2E14 /* NewOfferCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewOfferCollectionViewCell.xib; sourceTree = "<group>"; };
+		BC7D859A250A2286000D2E14 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC7D859B250A2286000D2E14 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC833F8D2507C77300A5E70F /* AdvertisementsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsUseCase.swift; sourceTree = "<group>"; };
 		BC833F8F2507C9C800A5E70F /* SliderAdvertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderAdvertisement.swift; sourceTree = "<group>"; };
 		BC833F912507CA2A00A5E70F /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
@@ -200,6 +208,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC7D8591250A13F9000D2E14 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D8599250A2277000D2E14 /* Categories Cell */,
+				BC7D8594250A1E73000D2E14 /* New Offer Cell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		BC7D8594250A1E73000D2E14 /* New Offer Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D8595250A1E83000D2E14 /* NewOfferCollectionViewCell.swift */,
+				BC7D8596250A1E83000D2E14 /* NewOfferCollectionViewCell.xib */,
+			);
+			path = "New Offer Cell";
+			sourceTree = "<group>";
+		};
+		BC7D8599250A2277000D2E14 /* Categories Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D859A250A2286000D2E14 /* CategoryCollectionViewCell.swift */,
+				BC7D859B250A2286000D2E14 /* CategoryCollectionViewCell.xib */,
+			);
+			path = "Categories Cell";
+			sourceTree = "<group>";
+		};
 		BC833F9D2507D5CF00A5E70F /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +280,7 @@
 		BC833FB32507EE6900A5E70F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BC7D8591250A13F9000D2E14 /* CollectionViewCells */,
 				BC833FBE2507EFA400A5E70F /* ItemsViewModels */,
 				BC833FB42507EE7200A5E70F /* HomeViewModel.swift */,
 				BC833FCB250826A200A5E70F /* HomeViewController.swift */,
@@ -511,7 +547,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB0DA4625077A0300090CD8 /* LaunchScreen.storyboard in Resources */,
+				BC7D859D250A2286000D2E14 /* CategoryCollectionViewCell.xib in Resources */,
 				BCB0DA4325077A0300090CD8 /* Assets.xcassets in Resources */,
+				BC7D8598250A1E83000D2E14 /* NewOfferCollectionViewCell.xib in Resources */,
 				BCB0DA4125077A0200090CD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC833FCF250826C600A5E70F /* Application.swift in Sources */,
+				BC7D8597250A1E83000D2E14 /* NewOfferCollectionViewCell.swift in Sources */,
 				BC833FC82507FD0D00A5E70F /* BestSellingItemViewModel.swift in Sources */,
 				BC833FD12508278400A5E70F /* HomeNavigator.swift in Sources */,
 				BC833FC62507FBD600A5E70F /* BrandItemViewModel.swift in Sources */,
@@ -658,6 +697,7 @@
 				BC833FD52508287B00A5E70F /* Reusable.swift in Sources */,
 				BC833FB82507EE8D00A5E70F /* ViewModelType.swift in Sources */,
 				BC833FBB2507EF1900A5E70F /* ActivityIndicator.swift in Sources */,
+				BC7D859C250A2286000D2E14 /* CategoryCollectionViewCell.swift in Sources */,
 				BC833FC22507F04A00A5E70F /* Observable+Extensions.swift in Sources */,
 				BC833FD3250827C900A5E70F /* UIStoryboard+Extensions.swift in Sources */,
 				BC833FB52507EE7200A5E70F /* HomeViewModel.swift in Sources */,

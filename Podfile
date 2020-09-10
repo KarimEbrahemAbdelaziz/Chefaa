@@ -17,6 +17,7 @@ end
 def ui
   pod 'R.swift'
   pod 'SkeletonView'
+  pod 'Kingfisher'
 end
 
 target 'Chefaa' do

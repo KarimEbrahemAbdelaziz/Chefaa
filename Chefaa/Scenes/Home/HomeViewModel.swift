@@ -11,26 +11,39 @@ import Domain
 import RxSwift
 import RxCocoa
 
+// MARK: - TypeAlias
+
 typealias HomeComponentsViewModelsTypeAlias = (sliders: [SliderItemViewModel], subCategories: [SubCategoryItemViewModel], brands: [BrandItemViewModel], bestSellingItems: [BestSellingItemViewModel], landingPages: [LandingPageItemViewModel])
 
 final class HomeViewModel: ViewModelType {
     
+    // MARK: - ViewModel Inputs
+    
     struct Input {
         let trigger: Driver<Void>
     }
+    
+    // MARK: - ViewModel Outputs
+    
     struct Output {
         let fetching: Driver<Bool>
         let homeAds: Driver<HomeComponentsViewModelsTypeAlias>
         let error: Driver<Error>
     }
     
+    // MARK: - Properties
+    
     private let useCase: AdvertisementsUseCase
     private let navigator: HomeNavigator
+    
+    // MARK: - Init
     
     init(useCase: AdvertisementsUseCase, navigator: HomeNavigator) {
         self.useCase = useCase
         self.navigator = navigator
     }
+    
+    // MARK: - ViewModel Transformation
     
     func transform(input: Input) -> Output {
         let activityIndicator = ActivityIndicator()
