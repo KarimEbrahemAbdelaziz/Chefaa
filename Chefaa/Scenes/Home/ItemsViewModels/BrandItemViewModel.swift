@@ -20,6 +20,6 @@ final class BrandItemViewModel   {
             return
         }
         
-        self.image = URL(string: "https://chefaa.com/\(image)")
+        self.image = URL(string: "https://chefaa.com/\(image)".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "")
     }
 }

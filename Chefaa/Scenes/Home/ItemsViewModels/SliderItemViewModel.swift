@@ -16,6 +16,6 @@ final class SliderItemViewModel   {
     
     init(with slider: SliderAdvertisement) {
         self.title = slider.title
-        self.image = URL(string: "https://chefaa.com/\(slider.image)")
+        self.image = URL(string: "https://chefaa.com/\(slider.image)".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "")
     }
 }

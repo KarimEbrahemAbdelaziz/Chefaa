@@ -16,6 +16,6 @@ final class LandingPageItemViewModel   {
     
     init(with landingPage: LandingPage) {
         self.title = landingPage.name
-        self.image = URL(string: "https://chefaa.com/\(landingPage.image)")
+        self.image = URL(string: "https://chefaa.com/\(landingPage.image)".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "")
     }
 }

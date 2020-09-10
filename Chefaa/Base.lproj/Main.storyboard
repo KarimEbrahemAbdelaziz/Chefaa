@@ -48,7 +48,7 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-zn-P9q">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="860"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                                         <subviews>
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for any product" translatesAutoresizingMaskIntoConstraints="NO" id="LGY-rg-MPD">
                                                 <rect key="frame" x="8" y="0.0" width="398" height="56"/>
@@ -216,6 +216,13 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="epV-Hd-hai"/>
                                                 </connections>
                                             </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFs-rc-Udd">
+                                                <rect key="frame" x="16" y="433.5" width="318" height="120"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0C-g4-6PK">
                                                 <rect key="frame" x="16" y="585.5" width="140.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
@@ -225,7 +232,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zem-LD-a3y">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zem-LD-a3y">
                                                 <rect key="frame" x="16" y="628" width="382" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -238,35 +245,138 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="0zn-LI-M9n"/>
                                                 </connections>
                                             </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-Ba-PyE">
+                                                <rect key="frame" x="16" y="628" width="382" height="200"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75i-7t-XF5">
+                                                <rect key="frame" x="16" y="860" width="71" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-hh-hTE">
+                                                <rect key="frame" x="16" y="902.5" width="382" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="2Rt-Ok-hDi"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="In8-pc-OR1">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BCl-QR-dCI"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Selling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5v-fw-LPj">
+                                                <rect key="frame" x="16" y="1018.5" width="118" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-93-rPg">
+                                                <rect key="frame" x="16" y="1061" width="382" height="230"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="230" id="QxE-lE-fh7"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IG4-i9-73K">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7cy-Xv-ehs"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show All &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqP-yi-rsd">
+                                                <rect key="frame" x="319" y="1021.5" width="79" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show All &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8os-LA-zmU">
+                                                <rect key="frame" x="319" y="863" width="79" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="svM-ky-vIu" firstAttribute="trailing" secondItem="rFs-rc-Udd" secondAttribute="trailing" constant="64" id="2pv-IO-Sdm"/>
+                                            <constraint firstAttribute="trailing" secondItem="2aW-hh-hTE" secondAttribute="trailing" constant="16" id="6uU-g7-b6i"/>
+                                            <constraint firstItem="svM-ky-vIu" firstAttribute="bottom" secondItem="rFs-rc-Udd" secondAttribute="bottom" id="95x-xN-qpE"/>
+                                            <constraint firstItem="8os-LA-zmU" firstAttribute="centerY" secondItem="75i-7t-XF5" secondAttribute="centerY" id="9U5-FA-h7G"/>
+                                            <constraint firstItem="75i-7t-XF5" firstAttribute="top" secondItem="zem-LD-a3y" secondAttribute="bottom" constant="32" id="ACa-KT-vVk"/>
+                                            <constraint firstItem="3w8-93-rPg" firstAttribute="top" secondItem="i5v-fw-LPj" secondAttribute="bottom" constant="16" id="B5z-Ap-umr"/>
                                             <constraint firstItem="LGY-rg-MPD" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="8" id="C4I-1m-ewV"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zem-LD-a3y" secondAttribute="bottom" constant="16" id="D3G-zE-hUL"/>
                                             <constraint firstItem="yRq-pb-sJd" firstAttribute="top" secondItem="kMd-oE-7MB" secondAttribute="bottom" constant="32" id="DWg-qy-43g"/>
+                                            <constraint firstItem="zem-LD-a3y" firstAttribute="trailing" secondItem="N5r-Ba-PyE" secondAttribute="trailing" id="ECY-LB-HSd"/>
                                             <constraint firstItem="J31-4Z-bcz" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="Fjm-Xw-Qod"/>
+                                            <constraint firstItem="3w8-93-rPg" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="JaT-gf-XwL"/>
                                             <constraint firstItem="kMd-oE-7MB" firstAttribute="top" secondItem="J31-4Z-bcz" secondAttribute="bottom" constant="16" id="Jqf-zE-saf"/>
                                             <constraint firstItem="svM-ky-vIu" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="KYn-Hx-5Jk"/>
+                                            <constraint firstItem="zem-LD-a3y" firstAttribute="leading" secondItem="N5r-Ba-PyE" secondAttribute="leading" id="MK8-Pc-lMW"/>
                                             <constraint firstItem="yRq-pb-sJd" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="Nbn-2V-fFm"/>
                                             <constraint firstAttribute="trailing" secondItem="zem-LD-a3y" secondAttribute="trailing" constant="16" id="OVp-nP-gVl"/>
+                                            <constraint firstItem="75i-7t-XF5" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="Pyq-7g-kwb"/>
                                             <constraint firstItem="svM-ky-vIu" firstAttribute="top" secondItem="7NX-5R-4tr" secondAttribute="bottom" constant="16" id="RXF-R7-Nnj"/>
-                                            <constraint firstAttribute="height" constant="860" id="TgN-3W-bWU"/>
+                                            <constraint firstAttribute="height" constant="1300" id="TgN-3W-bWU"/>
+                                            <constraint firstItem="2aW-hh-hTE" firstAttribute="top" secondItem="75i-7t-XF5" secondAttribute="bottom" constant="16" id="U1a-Iz-wDC"/>
                                             <constraint firstItem="LGY-rg-MPD" firstAttribute="top" secondItem="YGM-zn-P9q" secondAttribute="top" id="XLB-Hl-QqR"/>
+                                            <constraint firstAttribute="trailing" secondItem="8os-LA-zmU" secondAttribute="trailing" constant="16" id="Zw0-7s-5ov"/>
+                                            <constraint firstItem="svM-ky-vIu" firstAttribute="top" secondItem="rFs-rc-Udd" secondAttribute="top" id="eAj-PE-Yg0"/>
                                             <constraint firstItem="7NX-5R-4tr" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="eD6-on-qnd"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3w8-93-rPg" secondAttribute="bottom" constant="8" id="eYn-Oy-rlW"/>
                                             <constraint firstItem="7NX-5R-4tr" firstAttribute="top" secondItem="yRq-pb-sJd" secondAttribute="bottom" constant="32" id="fSb-fI-qDq"/>
+                                            <constraint firstItem="zem-LD-a3y" firstAttribute="bottom" secondItem="N5r-Ba-PyE" secondAttribute="bottom" id="hfk-9X-htH"/>
                                             <constraint firstItem="J0C-g4-6PK" firstAttribute="top" secondItem="svM-ky-vIu" secondAttribute="bottom" constant="32" id="hiJ-4c-hqK"/>
+                                            <constraint firstItem="TqP-yi-rsd" firstAttribute="centerY" secondItem="i5v-fw-LPj" secondAttribute="centerY" id="iY8-5S-MEy"/>
                                             <constraint firstAttribute="trailing" secondItem="yRq-pb-sJd" secondAttribute="trailing" constant="16" id="ioF-nE-Rbb"/>
+                                            <constraint firstItem="i5v-fw-LPj" firstAttribute="top" secondItem="2aW-hh-hTE" secondAttribute="bottom" constant="16" id="jIr-eX-JKl"/>
+                                            <constraint firstAttribute="trailing" secondItem="TqP-yi-rsd" secondAttribute="trailing" constant="16" id="kwg-kZ-ytf"/>
                                             <constraint firstItem="J31-4Z-bcz" firstAttribute="top" secondItem="LGY-rg-MPD" secondAttribute="bottom" constant="16" id="lt0-Ri-GcK"/>
                                             <constraint firstAttribute="trailing" secondItem="kMd-oE-7MB" secondAttribute="trailing" constant="16" id="nds-vh-ywI"/>
                                             <constraint firstAttribute="trailing" secondItem="LGY-rg-MPD" secondAttribute="trailing" constant="8" id="ovH-ni-q2A"/>
                                             <constraint firstItem="J0C-g4-6PK" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="rfx-vm-ypG"/>
                                             <constraint firstItem="zem-LD-a3y" firstAttribute="top" secondItem="J0C-g4-6PK" secondAttribute="bottom" constant="16" id="sOh-rb-cKh"/>
+                                            <constraint firstAttribute="trailing" secondItem="3w8-93-rPg" secondAttribute="trailing" constant="16" id="smh-vB-Bvv"/>
+                                            <constraint firstItem="i5v-fw-LPj" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="to2-Nu-Sae"/>
+                                            <constraint firstItem="2aW-hh-hTE" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="uFo-FX-1qY"/>
+                                            <constraint firstItem="svM-ky-vIu" firstAttribute="leading" secondItem="rFs-rc-Udd" secondAttribute="leading" id="w95-gQ-Nvp"/>
                                             <constraint firstAttribute="trailing" secondItem="svM-ky-vIu" secondAttribute="trailing" constant="16" id="wVe-q9-YAJ"/>
                                             <constraint firstItem="zem-LD-a3y" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="whD-ax-dCY"/>
+                                            <constraint firstItem="zem-LD-a3y" firstAttribute="top" secondItem="N5r-Ba-PyE" secondAttribute="top" id="yOg-We-3kl"/>
                                             <constraint firstItem="kMd-oE-7MB" firstAttribute="leading" secondItem="YGM-zn-P9q" secondAttribute="leading" constant="16" id="zBt-oa-qRn"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -308,6 +418,8 @@
                     </view>
                     <connections>
                         <outlet property="allCategoriesCollectionView" destination="zem-LD-a3y" id="ZUN-EN-hce"/>
+                        <outlet property="bestSellingItemsCollectionView" destination="3w8-93-rPg" id="1ha-5h-UJv"/>
+                        <outlet property="brandsCollectionView" destination="2aW-hh-hTE" id="oAX-wj-AC7"/>
                         <outlet property="newOffersCollectionView" destination="svM-ky-vIu" id="imK-00-Gew"/>
                         <outlet property="sliderImage" destination="kMd-oE-7MB" id="Uf0-aG-Egc"/>
                     </connections>

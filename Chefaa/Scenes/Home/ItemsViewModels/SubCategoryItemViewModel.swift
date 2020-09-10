@@ -16,6 +16,6 @@ final class SubCategoryItemViewModel   {
     
     init(with subCategory: SubCategory) {
         self.title = subCategory.title
-        self.image = URL(string: "https://chefaa.com/\(subCategory.image)")
+        self.image = URL(string: "https://chefaa.com/\(subCategory.image)".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "")
     }
 }

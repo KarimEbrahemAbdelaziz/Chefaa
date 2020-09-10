@@ -20,11 +20,15 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var sliderImage: UIImageView!
     @IBOutlet private weak var newOffersCollectionView: UICollectionView!
     @IBOutlet private weak var allCategoriesCollectionView: UICollectionView!
+    @IBOutlet private weak var brandsCollectionView: UICollectionView!
+    @IBOutlet private weak var bestSellingItemsCollectionView: UICollectionView!
     
     // MARK: - Properties
     
     private let newOfferCollectionViewItemSize = CGSize(width: 200, height: 110)
     private let allCategoreisCollectionViewItemSize = CGSize(width: 60, height: 100)
+    private let brandsCollectionViewItemSize = CGSize(width: 80, height: 80)
+    private let bestSellingItemsCollectionViewItemSize = CGSize(width: 180, height: 220)
     private let sliderImageCornerRadius: CGFloat = 16.0
     private let disposeBag = DisposeBag()
     
@@ -56,6 +60,8 @@ class HomeViewController: UIViewController {
                 self?.sliderImage.kf.setImage(with: homeAds.sliders.first?.image)
                 self?.populateNewOffersCollectionView(with: homeAds.landingPages)
                 self?.populateAllCategoriesCollectionView(with: homeAds.subCategories)
+                self?.populateBrandsCollectionView(with: homeAds.brands)
+                self?.populateBestSellingItemsCollectionView(with: homeAds.bestSellingItems)
             })
             .disposed(by: disposeBag)
         
@@ -91,6 +97,22 @@ extension HomeViewController {
         }
         .disposed(by: self.disposeBag)
     }
+    
+    private func populateBrandsCollectionView(with brands: [BrandItemViewModel]) {
+        Observable.just(brands)
+            .bind(to: self.brandsCollectionView.rx.items(cellIdentifier: BrandCollectionViewCell.reuseID, cellType: BrandCollectionViewCell.self)) { (row, element, cell) in
+                cell.configure(viewModel: element)
+        }
+        .disposed(by: self.disposeBag)
+    }
+    
+    private func populateBestSellingItemsCollectionView(with items: [BestSellingItemViewModel]) {
+        Observable.just(items)
+            .bind(to: self.bestSellingItemsCollectionView.rx.items(cellIdentifier: BestSellingCollectionViewCell.reuseID, cellType: BestSellingCollectionViewCell.self)) { (row, element, cell) in
+                cell.configure(viewModel: element)
+        }
+        .disposed(by: self.disposeBag)
+    }
 }
 
 // MARK: - UI Components Configurations
@@ -108,6 +130,8 @@ extension HomeViewController {
     private func registerCollectionViewCells() {
         newOffersCollectionView.register(UINib(nibName: "NewOfferCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "NewOfferCollectionViewCell")
         allCategoriesCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCollectionViewCell")
+        brandsCollectionView.register(UINib(nibName: "BrandCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BrandCollectionViewCell")
+        bestSellingItemsCollectionView.register(UINib(nibName: "BestSellingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BestSellingCollectionViewCell")
     }
     
     private func sizeForCollectionViewItem(collectionView: UICollectionView) -> CGSize {
@@ -115,6 +139,10 @@ extension HomeViewController {
             return newOfferCollectionViewItemSize
         } else if collectionView == allCategoriesCollectionView {
             return allCategoreisCollectionViewItemSize
+        } else if collectionView == brandsCollectionView {
+            return brandsCollectionViewItemSize
+        } else if collectionView == bestSellingItemsCollectionView {
+            return bestSellingItemsCollectionViewItemSize
         }
         return CGSize.zero
     }
